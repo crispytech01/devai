@@ -22,7 +22,7 @@ const Nav = () => {
   }, [])
 
   return (
-    <nav className='flex-between w-full mb-16 pt-3'>
+    <nav className='flex-between w-full mb-10 md:mb-16 pt-3'>
         <Link className='flex flex-center gap-2' href='/'>
             <Image src='/assets/images/logo.png' width={50} height={50} className='object-contain' alt='devai logo'/>
             <p className='logo_text'>Crispytechrx</p>
@@ -32,7 +32,7 @@ const Nav = () => {
         <div className='sm:flex hidden'>
             {session?.user ? (
                 <div className='flex gap-3 md:gap-5'>
-                    <Link href='/create-digest' className='black_btn'>Create Digest</Link>
+                    <Link href='/create-digest' className='sky_btn'>Create Digest</Link>
                     <button className='outline_btn' onClick={signOut}>Sign Out</button>
                     <Link href='/profile'>
                         <Image src={session?.user.image}  width={37} height={37} className='rounded-full' alt='profile' />
@@ -41,7 +41,7 @@ const Nav = () => {
             ):(
                 <>
                     {providers && Object.values(providers).map((provider)=>(
-                        <button type='button' key={provider.name} onClick={()=>signIn(provider.id)} className='black_btn'>
+                        <button type='button' key={provider.name} onClick={()=>signIn(provider.id)} className='sky_btn'>
                             Sign In
                         </button>
                     ))}
@@ -61,9 +61,9 @@ const Nav = () => {
                     {toggleDropdown && (
                         <div className='dropdown'>
                             <Link className='dropdown_link' href='/profile' onClick={()=>setToggleDropdown(false)}>Profile</Link>
-                            <Link className='dropdown_link' href='create-digest' onClick={()=>setToggleDropdown(false)}>Create Prompt</Link>
+                            <Link className='dropdown_link' href='create-digest' onClick={()=>setToggleDropdown(false)}>Add Digest</Link>
                             <button 
-                                className='mt-5 w-full black_btn'
+                                className='mt-5 w-full sky_btn'
                                 type='button' 
                                 onClick={()=>{
                                 setToggleDropdown(false);
@@ -75,7 +75,7 @@ const Nav = () => {
             ):(
                 <>
                     {providers && Object.values(providers).map((provider)=>(
-                        <button type='button' key={provider.name} onClick={()=>signIn(provider.id)} className='black_btn'>
+                        <button type='button' key={provider.name} onClick={()=>signIn(provider.id)} className='sky_btn'>
                             Sign In
                         </button>
                     ))}

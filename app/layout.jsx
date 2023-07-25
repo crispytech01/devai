@@ -4,8 +4,8 @@ import Footer from '@components/Footer'
 import Provider from '@components/Provider'
 
 export const metadata = {
-    title: 'Promptopia',
-    description: 'Discover and share AI prompt'
+    title: 'crispytechrx',
+    description: 'Elevate your Health with Smart Software Solutions',
 }
 
 const RootLayout = ({ children }) => {

@@ -28,11 +28,8 @@ const Feed = () => {
 
   useEffect(()=>{
     const fetchDigest = async() =>{
-      console.log('debugging')
       const respnse = await fetch('api/digest/get')
       const data = await respnse.json();
-      console.log('debugging not')
-      console.log(data)
       setDigest(data)
     }
 
@@ -45,7 +42,7 @@ const Feed = () => {
         <input 
           className='search_input peer'
           type='text'
-          placeholder='Search tag or username'
+          placeholder='Start typing...'
           value={searchDigest}
           onChange={handleSearchDigest}
           required
