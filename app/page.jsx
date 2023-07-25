@@ -15,7 +15,7 @@ const Home = () => {
         <MdEast className=''/>
       </div>
 
-      <div className='flex items-center text-white px-5 rounded-full mb-10 transition ease-in-out delay-150 bg-green-700 hover:-translate-y-1 hover:scale-110 hover:bg-green-500 duration-300 '>
+      <div className='flex items-center border-1 border-sky-700 text-white px-5 rounded-full mb-10 transition ease-in-out delay-150 bg-sky-700 hover:-translate-y-1 hover:scale-110 hover:bg-sky-700 duration-300 '>
         <Link href='/digests' className='py-2 px-2 transition'>Explore Projects</Link>
       </div>
     </section>
