@@ -1,16 +1,24 @@
-import Feed from '@components/Feed'
+import Link from 'next/link';
+import { MdEast } from "react-icons/md";
+
 
 const Home = () => {
   return (
     <section className='w-full flex-center flex-col'>
-        <h1 className='head_text text-center'>
-            Discover & Share
-            <br className='max-md:hidden' />
-            <span className='orange_gradient text-center'>AI-Powered prompt</span>    
-        </h1>
-        <p className='desc text-center'>Promptopia is an open-source AI prompting tool for modern world to discover, create and share creative prompts</p>
-    
-        <Feed />
+      <h1 className='head_text text-center '>
+            Software Development
+          <br className='max-md:hidden' />
+          <span className='text-center'>for Supportive Health</span>    
+      </h1>
+      <p className='desc text-center'>Elevate your Health with Smart Software Solutions</p>
+      <div className='animate-bounce flex items-center text-white px-5 rounded-full m-10 transition ease-in-out delay-150 bg-pink-700 hover:-translate-y-1 hover:scale-110 hover:bg-pink-500 duration-300 '>
+        <Link href='/digests' className='py-2 px-2 transition'>Read Latest Digest</Link>
+        <MdEast className=''/>
+      </div>
+
+      <div className='flex items-center text-white px-5 rounded-full m-10 transition ease-in-out delay-150 bg-green-700 hover:-translate-y-1 hover:scale-110 hover:bg-green-500 duration-300 '>
+        <Link href='/digests' className='py-2 px-2 transition'>Explore Projects</Link>
+      </div>
     </section>
   )
 }
