@@ -7,7 +7,7 @@ const ContactForm = ({name, email, subject, message, onChange}) => {
     }
   return (
     <div>
-        <form className="shadow grid">
+        <form className="shadow grid px-4">
             <div className='w-[400px] p-5 gap-4'>
                 <div className='grid gap-3 mb-4'>
                         <label className='block font-semibold'>Name</label>
