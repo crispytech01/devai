@@ -8,6 +8,7 @@ const Footer = () => {
         <div className='flex flex-col md:flex-row font-md text-center font-semibold md:gap-x-[150px]'> 
             <p className='py-3'><Link href='/'>Projects</Link></p>
             <p className='py-3'><Link href='/'>News Digests</Link></p>
+            <p className='py-3'><Link href='/contact'>Contact Us</Link></p>
             <p className='py-3'><Link href='https://www.linkedin.com/in/chukwuyem-obiazi-932528195'>LinkedIn</Link></p>
             <p className='py-3'><Link href='https://github.com/crispytech01'>Github</Link></p>
         </div>
