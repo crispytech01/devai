@@ -19,7 +19,7 @@ const Home = () => {
           </div>
           <div className='md:w-3/5 text-start'>
               <h1 className='head_text w-full max-sm:text-md text-center'>Welcome to Crispytechrx!
-                <span className='pt-7 text-sky-700 text-[40px]'>{' '}Unleashing Software Development Expertise</span>
+                <span className='pt-7 text-sky-700'>{' '}Unleashing Software Development Expertise</span>
               </h1>
               <p className='max-[770px]:hidden font-satoshi text-xl pt-5'>I am a software developer crafting cutting-edge solutions</p>
           </div> 
@@ -33,7 +33,7 @@ const Home = () => {
           </div>
           <p className='min-[770px]:hidden font-satoshi text-2xl text-center pt-5'>I am a software developer crafting cutting-edge solutions</p>
         </div>
-      <div className='flex flex-col mt-12'>
+      <div className='flex flex-col mt-5 md:mt-12'>
           <div className=''>
             <h2 className='text-pink-700 font-semibold text-2xl'>My Services</h2>
             <hr className='border-b-10 w-[130px] border-pink-400' />            
